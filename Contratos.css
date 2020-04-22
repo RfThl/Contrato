@@ -1,0 +1,58 @@
+h1{
+	font-family: Arial;
+	color: firebrick;
+	border-bottom: 1px solid;
+    }
+
+label {
+	font-family: liberation sans;
+	font-size: 19px;
+	width: 100%;
+}
+
+body {
+	padding-left: 20%;
+	padding-right: 50%;
+	border-bottom: 1px solid;
+	margin: 100;
+	padding: 50;
+}
+.uppercase{
+	text-transform: uppercase;
+}
+
+.instrucciones{
+	color: black;
+	 border-bottom: 1px solid;
+}
+
+.vendedor{
+	background: #D6D4FE;
+}
+
+.comprador{
+	background: #DBDBFE;
+}
+.scrollable {
+    height: 100px; /* or any value */
+    overflow-y: auto;
+}
+
+.split
+ {
+	 right: 0;
+	 overflow-y:scroll;
+	 text-align: center;
+	height: 100%;
+	width: 45%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	overflow-x: hidden;
+	padding-top: 5%;
+	padding-left: 5%;
+	padding-right: 5%;
+	
+  
+}
+
