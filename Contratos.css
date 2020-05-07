@@ -1,4 +1,4 @@
-h1{
+h2{
 	font-family: Arial;
 	color: firebrick;
 	border-bottom: 1px solid;
@@ -10,7 +10,7 @@ label {
 	width: 100%;
 }
 
-body {
+.Funcion{
 	padding-left: 20%;
 	padding-right: 50%;
 	border-bottom: 1px solid;
@@ -52,7 +52,16 @@ body {
 	padding-top: 5%;
 	padding-left: 5%;
 	padding-right: 5%;
-	
-  
+
+
 }
 
+
+.contrato{
+	display: flex;
+	align-content: flex-start;
+	align: left;
+	padding-right: 25px;
+}
+
+}
