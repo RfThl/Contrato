@@ -36,32 +36,32 @@ next.onclick = function(){
 		fecha.style.background = 'red';
 	console.log('algomas');
 	}else{fecha.style.background = 'white';}
-	
+
 	if(nombre.value === '') {
 		listo = false;
 		nombre.style.background = 'red';
 	console.log('algomas');
 	}else{nombre.style.background = 'white';}
-	
+
 	if(combrecomprador.value === '') {
 		listo = false;
 		combrecomprador.style.background = 'red';
 	console.log('algomas');
 	}else{combrecomprador.style.background = 'white';}
-	
+
 	if(numero.value === '') {
 		listo = false;
 		numero.style.background = 'red';
 	console.log('algomas');
 	}else{numero.style.background = 'white';}
-	
+
 	if(fechamoral.value === '') {
 		listo = false;
 		fechamoral.style.background = 'red';
 	console.log('algomas');
 	}else{fechamoral.style.background = 'white';}
-	
-	
+
+
 	if(nombrerepresentante.value === '') {
 		listo = false;
 		nombrerepresentante.style.background = 'red';
@@ -69,7 +69,7 @@ next.onclick = function(){
 	}else{nombrerepresentante.style.background = 'white';}
 	if (listo == true){
 		//primerParrafo.innerHTML = "En Tijuana, Baja California, el dos de abril de dos mil catorce, por una parte en calidad de “VENDEDORA”, MARIA GARCIA GARCÍA, y por la otra como la “COMPRADORA”, DISTRIBUIDORA FRONTERA S. A. DE C.V., representada por FRANCISCO PANTERA, convienen celebrar un contrato de compraventa al tenor de las siguientes declaraciones y cláusulas:";
-		primerParrafo.innerHTML = "En " + municipio.value + ", " + estado.value + " el " + fecha.value + 
+		primerParrafo.innerHTML = "En " + municipio.value + ", " + estado.value + " el " + fecha.value +
 		" por una parte en calidad de “VENDEDORA”, " + nombre.value + ", y por la otra como la “COMPRADORA”, " + combrecomprador.value + ", representada por " + nombrerepresentante.value + ", convienen celebrar un contrato de compraventa al tenor de las siguientes declaraciones y cláusulas:" ;
 		camponec.forEach((camponec) => camponec.disabled = true);
 	}
@@ -82,7 +82,7 @@ next.onclick = function(){
 			//</p>
 function onSubmit(e) {
   e.preventDefault();
-  
+
   if(fecha.value === '') {
     // alert('Please enter all fields');
 	console.log('algo');
@@ -90,10 +90,9 @@ function onSubmit(e) {
     // Create new list item with user
 	console.log('otra');
     const li = document.createElement('li');
-   
+
   }
 }
-
 
 
 
