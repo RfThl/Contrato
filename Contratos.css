@@ -61,7 +61,6 @@ label {
 	display: flex;
 	align-content: flex-start;
 	align: left;
+	padding-top: 2%;
 	padding-right: 25px;
-}
-
 }
