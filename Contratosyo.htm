@@ -4,6 +4,10 @@
 	<meta charset = "utf-8">
 	<title>Contratos</title>
 	<link href="./Contratos.css" type="text/css" rel="stylesheet">
+	<!-- Cargar bootstrap--><!-- Cargar bootstrap-->
+	<link href="/static/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="/static/js/jquery.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
  </head>
  
  <body>
@@ -24,7 +28,7 @@
 		<input type = "text" name = "estado" id = "estado" value = "Baja California" min = "3" max = "15" pattern = "[a-zA-Z]" disabled>
 	<br><br>
 	<label for = "municipio">Municipio</label>
-	<select id = "municipio" name = "municipio"> 
+	<select id = "municipio" name = "municipio">
 		<option value = "tijuana">Tijuana</option>
 		<option value = "tecate">Tecate</option>
 		<option value = "mexicali">Mexicali</option>
@@ -39,7 +43,6 @@
 	<section class = "vendedor">
 	<!-- -->
 	<label for = "cantidad-de-vendedores">Cantidad de vendedores</label>
-	
 		<input type = "number" name = "cantidad-de-vendedores" id = "cantidad-de-vendedores" value = "1" min = "1" max = "4" size = "3">
 	<br>
     <label for = "tipo-de-persona-vendedor">Tipo de persona</label>
@@ -109,18 +112,13 @@
 			<br>
 			<p> 
 			</p>
-			
 			<br>
 			<p> 
 			</p>
-			
 		</div>
 	</div>
 	
 	</div>
-	
-	
-	
   
   <script src = "./Contratosjs.js"> </script>
  </body>
