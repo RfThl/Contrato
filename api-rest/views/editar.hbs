@@ -1,0 +1,36 @@
+
+
+<form action="/api/product/{{products._id}}?_method=PUT" method="post">
+    <input type="hidden" name="_method" value="PUT">
+    <div class="form-group">
+        <label for="_id">ID</label>
+        <input type="text" class="form-control" disabled value="{{products._id}}" name="_id">
+    </div>
+    <div class="form-group">
+        <label for="Nombre">Name</label>
+        <input type="text" class="form-control" value="{{products.name}}" name="name">
+    </div>
+    <div class="form-group">
+        <label for="Price">Price</label>
+        <input type="number" class="form-control" value="{{products.price}}" name="price">
+    </div>
+    <div class="form-group">
+        <label for="category">Category</label>
+        <select class="form-control" id="category" name="category">
+            <option selected>{{products.category}}</option>
+            <option>Computers</option>
+            <option>Phones</option>
+            <option>Accesories</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="description">Description</label>
+        <input type="text" class="form-control" value="{{products.description}}" name="description">
+    </div>
+     <div class="form-group">
+        <label for="picture">picture</label>
+        <input type="text" class="form-control" value="{{products.picture}}" name="picture">
+    </div>
+    <button type="submit" class="btn botonEditar" style="">Modificar <i class="fas fa-edit"></i></button>
+    <button type="submit" class="btn botonEliminar" formaction="/api/product/{{products._id}}?_method=delete" method="post">Eliminar <i class="fas fa-trash-alt"></i></button>
+</form>

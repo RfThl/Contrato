@@ -1,0 +1,70 @@
+<div class="row">
+
+    <!-- Elegir la forma que quieres buscar -->
+    <form action="/api/product/productId" method="POST">
+    <div class="idonombre ">
+        <select id="buscarX" name="buscarX" class="IdOnombre form-control">
+        <option value="nombre">Por nombre</option>
+        <option value="ID">Por ID</option>
+        </select>
+    </div>
+    
+    <!-- buscador -->
+      <div class="d-flex justify-content-center h-100 p-2">
+        <div class="searchbar">
+          <input class="search_input" type="text" name="productId" id="productId" placeholder="Buscar...">
+          <button type="submit" class="search_icon" style="background-color: transparent;"><i class="fas fa-search"></i></button>
+        </div>
+      </div>
+    
+    </form>
+
+<!--boton de insertar -->
+    <div class="col p-2" >
+        <form action="/insertar" method="GET">
+            <button type="submit" class="btn boton2">Insertar <i class="fas fa-plus-square" ></i></button>
+        </form>
+    </div>
+</div>
+
+
+
+<!-- Tabla para mostrar los productos -->
+<table id="myTable" class="table table-striped table-responsive-md btn-table">
+    
+    <thead>
+        
+        <tr>
+            <th>ID</th>
+            <th class="th-sm" >Name</th>
+            <th class="th-sm">price</th>
+            <th class="th-sm">Picture</th>
+            <th class="th-sm">Category</th>
+            <th class="th-sm">Description</th>
+            <th class="th-sm">Options</th>
+        </tr>
+    </thead>
+
+    <tbody>
+    {{#products}}
+        <tr style="color: rgb(61, 38, 29);"> <br>
+            <td>{{_id}}</td>
+            <td>{{name}}</td>
+            <td>{{price}}</td>
+            <td>{{picture}}</td>
+            <td>{{category}}</td>
+            <td>{{description}}</td>
+            <td>
+                <form action="/api/product/{{_id}}" method="GET">
+                    <button class="btn  botonEditar" type="submit" title="Editar"><i class="fas fa-edit"></i></button>
+                </form>
+            </td>
+            <td>
+                <form action="/api/product/{{_id}}" method="GET">
+                    <button class="btn botonEliminar" type="submit" title="Eliminar"><i class="fas fa-trash-alt"></i></button>
+                </form>
+            </td>
+        </tr>
+    {{/products}}
+    </tbody>
+</table>

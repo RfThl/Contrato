@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+<!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script> -->
+<!-- <link rel="stylesheet" type="text/css" href="../static/css/index.css" th:href="@{/css/index.css}"> -->
+<link href="/static/css/styleTables.css" rel="stylesheet">
+<link href="/static/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+<script src="/static/js/jquery.min.js"></script>
+<script src="/static/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/2f6670760e.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-sm"  >
+  <!-- Brand -->
+  <a class="navbar-brand" href="#"><img class="logo" src="/static/img/69126.jpg" alt="Logo" style=""></a>
+
+  <!-- Links -->
+  <ul class="navbar-nav mx-auto">
+    <li class="nav-item">
+      <a class="nav-link navtext" href="/" ><i class="fas fa-home"></i> home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link navtext" href="/api/product"><i class="fas fa-th-list"></i> Products</a>
+    </li>
+
+    <!-- Dropdown -->
+    <li class="nav-item dropdown ">
+      <a class="nav-link dropdown-toggle disabled" href="#" id="navbardrop" data-toggle="dropdown" >
+        <i class="fas fa-info-circle"></i>Pronto...
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Link 1</a>
+        
+      </div>
+    </li>
+    <hr/>
+  </ul>
+  
+</nav>
+
+<div class="container " style="background-color: rgba(255, 239, 237, 0.7);position:relative" >
+{{{body}}}
+</div>
+<!-- footer -->
+<br><br><br><br>
+<footer class="footer">
+        <div class="">
+        <p>© José Guzmán | Politica de privacidad | Terminos del servcio</p>
+        </div>
+</footer>
+</body>
+</html>

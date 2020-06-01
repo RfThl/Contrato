@@ -1,0 +1,190 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body{
+  
+
+  background-color:salmon;
+  background-image:
+  radial-gradient(circle at 100% 150%, salmon 24%, pink 24%, pink 28%, salmon 28%, salmon 36%, pink 36%, pink 40%, transparent 40%, transparent),
+  radial-gradient(circle at 0    150%, salmon 24%, pink 24%, pink 28%, salmon 28%, salmon 36%, pink 36%, pink 40%, transparent 40%, transparent),
+  radial-gradient(circle at 50%  100%, pink 10%, salmon 10%, salmon 23%, pink 23%, pink 30%, salmon 30%, salmon 43%, pink 43%, pink 50%, salmon 50%, salmon 63%, pink 63%, pink 71%, transparent 71%, transparent),
+  radial-gradient(circle at 100% 50%, pink 5%, salmon 5%, salmon 15%, pink 15%, pink 20%, salmon 20%, salmon 29%, pink 29%, pink 34%, salmon 34%, salmon 44%, pink 44%, pink 49%, transparent 49%, transparent),
+  radial-gradient(circle at 0    50%, pink 5%, salmon 5%, salmon 15%, pink 15%, pink 20%, salmon 20%, salmon 29%, pink 29%, pink 34%, salmon 34%, salmon 44%, pink 44%, pink 49%, transparent 49%, transparent);
+  background-size: 100px 50px;
+}
+
+
+
+/* mi css*/
+#myTable{
+	margin-top:0%;
+	text-align: center;
+
+}
+
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  height: 100px;
+  width: 100%;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+}
+.boton{
+    font-size: x-large;
+    float: right;
+    width: 100px;
+    background-color: transparent;
+    
+}
+.boton:hover{
+  font-size: x-large;
+  color: rgb(255, 255, 255);
+  width: 160px;
+  height: 50px;
+}
+.boton2{
+  font-size: x-large;
+  width: 100px;
+  float: right;
+  border: transparent;
+  background-color: transparent;
+}
+.boton2:hover{
+  font-size: x-large;
+  color: greenyellow;
+  width: 160px;
+  height: 50px;
+}
+.botonEliminar{
+  
+  float: right;
+  border: #e74c3c;
+  background-color: #E6726A;
+}
+.botonEliminar:hover{
+  border: #FF7477;
+  color: white;
+  background-color: #e74c3c;
+  
+}
+.botonEditar{
+  
+  
+  border: #3cd3e7;
+  background-color: rgb(72, 204, 160);
+}
+.botonEditar:hover{
+  border: #3cd3e7;
+  background-color: rgb(72, 204, 160);
+  
+}
+
+.footer{
+    position: fixed;
+    height: 55px;
+    bottom: 0;
+    color:#fff;
+    padding-top:20px;
+    width: 100%;
+    background: #E6726A;
+    background: -webkit-linear-gradient(to right, #BF5F58, #E6726A); 
+    background: linear-gradient(to right, #BF5F58, #E6726A);
+    box-shadow: 0px 3px 1px black ;
+    text-align:center;
+}
+.navbar{
+  
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, #FF7477 0%, #E6726A 100%);
+  box-shadow: 3px 0px 1px black ;
+  padding-bottom: 20px;
+}
+.nav-link:hover{
+  font-size:xx-large;
+  color:pink;
+  text-shadow:0px 1px 5px rgb(255, 119, 104);
+}
+.nav-link{
+  
+  font-size:x-large;
+}
+
+.navtext{
+  color: black;
+}
+input{
+  font-size: x-large;
+  
+}
+input:focus,select:focus, input:hover,select:hover{
+  font-size: x-large;
+  padding-bottom: 0%;
+}
+.logo{
+  width: 45px;
+}
+.logo:hover{
+  width: 46px; 
+}
+/* css para buscador */
+.IdOnombre{
+  border: transparent;
+  background-color: pink;
+  color: #BF5F58;
+}
+.searchbar{
+  margin-bottom: auto;
+  margin-top: auto;
+  height: 60px;
+  background-color: #ffffff73;
+  border-radius: 30px;
+  padding: 10px;
+  padding-left: 20px;
+  }
+
+  .search_input{
+  color: rgb(70, 70, 70);
+  border: 0;
+  outline: 0;
+  background: none;
+  width: 0;
+  caret-color:transparent;
+  line-height: 40px;
+  transition: width 0.4s linear;
+  }
+
+  .searchbar:hover > .search_input{
+  padding: 0 10px;
+  width: 450px;
+  caret-color:red;
+  transition: width 0.4s linear;
+  }
+
+  .searchbar:hover > .search_icon{
+  background: white;
+  color: #e74c3c;
+  }
+
+  .search_icon{
+  height: 40px;
+  width: 40px;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color:rgb(0, 0, 0);
+  text-decoration:none;
+  }
+  .search_icon:hover{
+    background-color: rgb(0, 0, 0);
+  }
+
+
+
+
+
+
+
+
