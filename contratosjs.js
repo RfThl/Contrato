@@ -182,6 +182,17 @@ const CM2num = document.querySelector('#CM2-numero')
 const CM2fecha = document.querySelector('#CM2-fecha')
 const CM2nombRep = document.querySelector('#CM2-nombre-representante')
 
+const TipoDeObjeto = document.querySelector('#Tipo-de-objeto')
+const VehiculoTipo = document.querySelector('#Vehiculo-Tipo')
+const VehiculoMarca = document.querySelector('#VehiculoMarca')
+const VehiculoModelo = document.querySelector('#VehiculoModelo')
+const IDVeicular = document.querySelector('#Numero-ID-Veicular')
+const PlacasDeCirculacion = document.querySelector('#Placas-de-circulacion')
+const VehiculoAdquiridoDe = document.querySelector('#VehiculoAdquiridoDe')
+const FechaAdquirido = document.querySelector('#fechaAdquirido')
+const VehiculoDescripcion = document.querySelector('#VehiculoDescripcion')
+
+
 const primerParrafo = document.querySelector('#primerParrafo')
 
 fecha.addEventListener('submit', onSubmit);
@@ -347,17 +358,67 @@ next.onclick = function(){
 	} //Fin de acciones para parte 1
 	
 	else if (ParteActual === 2){
-		//listo = true;
+		/listo = true;
 			
-		/*if(fecha.value === '') {
+		if(TipoDeObjeto.value === '') {
 			listo = false;
-			fecha.style.background = 'pink';
-			console.log('algomas');
-		}else{fecha.style.background = 'white';}
-			*/
+			TipoDeObjeto.style.background = 'pink';
+			console.log('TipoDeObjeto');
+		}else{TipoDeObjeto.style.background = 'white';}
+		
+		if(VehiculoTipo.value === '') {
+			listo = false;
+			VehiculoTipo.style.background = 'pink';
+			console.log('VehiculoTipo');
+		}else{VehiculoTipo.style.background = 'white';}
+		
+		if(VehiculoMarca.value === '') {
+			listo = false;
+			VehiculoMarca.style.background = 'pink';
+			console.log('VehiculoMarca');
+		}else{VehiculoMarca.style.background = 'white';}
+		
+		if(VehiculoModelo.value === '') {
+			listo = false;
+			VehiculoModelo.style.background = 'pink';
+			console.log('VehiculoModelo');
+		}else{VehiculoModelo.style.background = 'white';}
+		
+		if(IDVeicular.value === '') {
+			listo = false;
+			IDVeicular.style.background = 'pink';
+			console.log('IDVeicular');
+		}else{IDVeicular.style.background = 'white';}
+		
+		if(PlacasDeCirculacion.value === '') {
+			listo = false;
+			PlacasDeCirculacion.style.background = 'pink';
+			console.log('PlacasDeCirculacion');
+		}else{PlacasDeCirculacion.style.background = 'white';}
+		
+		if(VehiculoAdquiridoDe.value === '') {
+			listo = false;
+			VehiculoAdquiridoDe.style.background = 'pink';
+			console.log('VehiculoAdquiridoDe');
+		}else{VehiculoAdquiridoDe.style.background = 'white';}
+		
+		if(FechaAdquirido.value === '') {
+			listo = false;
+			FechaAdquirido.style.background = 'pink';
+			console.log('FechaAdquirido');
+		}else{FechaAdquirido.style.background = 'white';}
+		
+		if(VehiculoDescripcion.value === '') {
+			listo = false;
+			VehiculoDescripcion.style.background = 'pink';
+			console.log('VehiculoDescripcion');
+		}else{VehiculoDescripcion.style.background = 'white';}
+		
+		if (listo === true){ 
 			ParteActual = 3;
 			document.getElementsByClassName('parte2')[0].style.display  =  'none'; 
 			document.getElementsByClassName('parte3')[0].style.display  =  'inline'; 
+		}
 	} //Fin de acciones para parte 2
 		
 	/*if (listo == true){
