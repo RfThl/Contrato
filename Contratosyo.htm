@@ -16,19 +16,15 @@
 	<p class = "instrucciones">Instrucciones (wip)</p>
   </header>
 
-  <!--Seccion de campos-->
-  <section class = "campos">
+ <!--Seccion de campos-->
+  <section class = "campos left">
 	<p>Ingresar datos</p>
-	<label for = "tipo-de-contrato">Tipo de contrato</label>
-	<select id = "tipo-de-contrato" name = "tipo-de-contrato">
-		<option value = "compraventa">Compraventa</option>
-	</select>
-    <br><br>
-	<label for = "estado">Estado</label>
+	<section class = "parte1">
+	<label for = "estado">Estado</label>	
 		<input type = "text" name = "estado" id = "estado" value = "Baja California" min = "3" max = "15" pattern = "[a-zA-Z]" disabled>
 	<br><br>
 	<label for = "municipio">Municipio</label>
-	<select id = "municipio" name = "municipio">
+	<select id = "municipio" name = "municipio"> 
 		<option value = "tijuana">Tijuana</option>
 		<option value = "tecate">Tecate</option>
 		<option value = "mexicali">Mexicali</option>
@@ -39,66 +35,304 @@
     <label for = "fecha">Fecha</label>
     <input class =  "camponecesario" type = "date" name = "fecha" id = "fecha" required>
 	<br><br>
-	<!-- --  Seccion del vendedor --  -->
+	<!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
+	<!-- --><!-- --  Seccion del vendedor --  --><!-- -->
+	<!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
 	<section class = "vendedor">
-	<!-- -->
 	<label for = "cantidad-de-vendedores">Cantidad de vendedores</label>
+		<input type = "number" name = "cantidad-de-vendedores" id = "cantidad-de-vendedores" value = "1" min = "1" max = "2" size = "3">
+	<br>
+	<!-- --><!-- -->
+	<!-- --><!-- -->
+	 <section class = vendedor1>
+		<label for = "tipo-de-persona-vendedor1">Tipo de persona</label>
+		<select id = "tipo-de-persona-vendedor1" name = "tipo-de-persona-vendedor1" value ="Moral" > 
+			<option value = "moral">Moral</option>
+			<option value = "fisica">Fisica</option>
+		</select>
+		<!-- -->
+		<!-- -->
+	<br>
+		<section class = VF1>
+			<label for = "VF1-nombre">Nombre</label>
+				<input class =  "camponecesario" type = "text" name = "VF1-nombre" id = "VF1-nombre" min = "3" max = "50" pattern = "[a-zA-Z].{1,}" >
+			<br>
+			<label class =  "camponecesario" >Genero</label>
+			<input type="radio" name="VF1-genero" id="VF1-m" value="m">
+				<label for="VF1-m">M</label>
+			<input type="radio" name="VF1-genero" id="VF1-h" value="h">
+				<label for="VF1-h">H</label>
+		</section>	
+		<!-- --><!-- -->
+		<!-- --><!-- -->
+		<section class = VM1>
+			<label for = "VM1-nombre">Nombre</label>
+				<input class =  "camponecesario combrecomprador" type = "text" name = "VM1-nombre" id = "VM1-nombre" min = "3" max = "50" pattern = "[a-zA-Z].{1,}" required>
+			<br>
+			<label class =  "camponecesario" >Constituido mediante: </label>
+			<input type="radio" name="VM1-creacion" id="VM1-escritura" value="escritura">
+				<label for="escritura">Escritura</label>
+			<input type="radio" name="VM1-creacion" id="VM1-poliza" value="poliza">
+				<label for="VM1-poliza">Poliza      </label>
+			<br>
+			<label for = "VM1-numero">Numero</label>
+				<input class =  "camponecesario" type = "text" name = "VM1-numero" id = "VM1-numero" min = "5" max = "5" pattern = "[0-9]" required>	
+			<br>
+			<label for = "VM1-fecha">Fecha</label>
+			<input class =  "camponecesario" type = "date" name = "VM1-fecha" id = "VM1-fecha" required>
+			<br>
+			<label for = "VM1-nombre-representante">Nombre del representante</label>
+				<input class =  "camponecesario" type = "text" name = "nVM1-nombre-representante" id = "VM1-nombre-representante" min = "3" max = "50" pattern = "[a-zA-Z0-9].{1,}" required>
+		 </section>
+			<br>			
+		<!-- -->
+		<br>
+	 </section>
+     <section class = vendedor2>
+		<label for = "tipo-de-persona-vendedor2">Tipo de persona</label>
+		<select id = "tipo-de-persona-vendedor2" name = "tipo-de-persona-vendedor2" value ="Moral" > 
+			<option value = "moral">Moral</option>
+			<option value = "fisica">Fisica</option>
+		</select>
+		<!-- -->
+		<!-- -->
+		<br>
+		<section class = VF2>
+			<label for = "VF2-nombre">Nombre</label>
+				<input class =  "camponecesario" type = "text" name = "VF2-nombre" id = "VF2-nombre" min = "3" max = "50" pattern = "[a-zA-Z0-9.{1,}]" >
+			<br>
+			<label class =  "camponecesario" >Genero</label>
+			<input type="radio" name="VF2-genero" id="VF2-m" value="m">
+				<label for="VF2-m">M</label>
+			<input type="radio" name="VF2-genero" id="VF2-h" value="h">
+				<label for="VF2-h">H</label>
+		</section>	
+		<!-- --><!-- -->
+		<!-- --><!-- -->
+		<section class = VM2>
+			<label for = "VM2-nombre">Nombre</label>
+				<input class =  "camponecesario combrecomprador" type = "text" name = "VM2-nombre" id = "VM2-nombre" min = "3" max = "50" pattern = "[a-zA-Z0-9].{1,}" required>
+			<br>
+			<label class =  "camponecesario" >Constituido mediante: </label>
+			<input type="radio" name="creacion" id="VM2-escritura" value="escritura">
+				<label for="VM2-escritura">Escritura</label>
+			<input type="radio" name="creacion" id="VM2-poliza" value="poliza">
+				<label for="VM2-poliza">Poliza      </label>
+			<br>
+			<label for = "VM2-numero">Numero</label>
+				<input class =  "camponecesario" type = "text" name = "VM2-numero" id = "VM2-numero" min = "5" max = "5" pattern = "[0-9].{1,}" required>	
+			<br>
+			<label for = "VM2-fecha">Fecha</label>
+			<input class =  "camponecesario" type = "date" name = "VM2-fecha" id = "VM2-fecha" required>
+			<br>
+			<label for = "VM2-nombre-representante">Nombre del representante</label>
+				<input class =  "camponecesario" type = "text" name = "VM2-nombre-representante" id = "VM2-nombre-representante" min = "3" max = "50" pattern = "[a-zA-Z0-9].{1,}" required>
+		 </section>
+			<br>			
+		<!-- -->
+	 </section>
+	 
+	 
+	 
+	</section>
 
-		<input type = "number" name = "cantidad-de-vendedores" id = "cantidad-de-vendedores" value = "1" min = "1" max = "4" size = "3">
 	<br>
-    <label for = "tipo-de-persona-vendedor">Tipo de persona</label>
-	<select id = "tipo-de-persona-vendedor" name = "tipo-de-persona-vendedor" value ="Moral" >
-		<option value = "moral">Moral</option>
-		<option value = "fisica">Fisica</option>
-	</select>
-    <br>
-    <label for = "nombre">Nombre</label>
-		<input class =  "camponecesario" type = "text" name = "nombre" id = "nombre" min = "3" max = "50" pattern = "[a-zA-Z0-9]" >
-	<br>
-	<label class =  "camponecesario" >Genero</label>
-	<input type="radio" name="genero" id="m" value="m">
-		<label for="m">M</label>
-    <input type="radio" name="genero" id="h" value="h">
-        <label for="h">H</label>
-	<br>
-    </section>
-	<br>
-	<!-- -- Datos del comprador --   -->
+	<!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
+	<!-- --><!-- --  Seccion del comprador --  --><!-- -->
+	<!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
 	<section class = "comprador">
 	<!-- -->
 	<label for = "cantidad-de-compradores">Cantidad de compradores</label>
-	<input type = "number" name = "cantidad-de-compradores" id = "cantidad-de-compradores" value = "1" min = "1" max = "4" size = "3" required>
+	<input type = "number" name = "cantidad-de-compradores" id = "cantidad-de-compradores" value = "1" min = "1" max = "2" size = "3" required>
+	<!--<select name = "cantidad-de-compradores" id = "cantidad-de-compradores">-->
 	<br>
-    <label for = "tipo-de-persona-comprador">Tipo de persona</label>
-	<select id = "tipo-de-persona-comprador" name = "tipo-de-persona-comprador">
-		<option value = "fisica">Fisica</option>
-		<option value = "moral">Moral</option>
-	</select>
-    <br>
-    <label for = "nombre">Nombre</label>
-		<input class =  "camponecesario combrecomprador" type = "text" name = "nombre" id = "nombre" min = "3" max = "50" pattern = "[a-zA-Z0-9]" required>
+	<!-- -->
+	<!-- -->
+	<section class = comprador1> 
+	<!-- -->
+		<label for = "tipo-de-persona-comprador1">Tipo de persona</label>
+		<select id = "tipo-de-persona-comprador1" name = "tipo-de-persona-comprador1"> 
+			<option value = "fisica">Fisica</option>
+			<option value = "moral">Moral</option>
+		</select>
+		<!-- -->
+		<!-- -->
+		<section class = CM1>
+		<br>
+			<label for = "CM1-nombre">Nombre</label>
+				<input class =  "camponecesario combrecomprador" type = "text" name = "CM1-nombre" id = "CM1-nombre" min = "3" max = "50" pattern = "[a-zA-Z0-9].{1,}" required>
+			<br>
+			<label class =  "camponecesario" >Constituido mediante: </label>
+			<input type="radio" name="CM1-creacion" id="CM1-escritura" value="escritura">
+				<label for="CM1-escritura">Escritura</label>
+			<input type="radio" name="CM1-creacion" id="CM1-poliza" value="poliza">
+				<label for="CM1-poliza">Poliza      </label>
+			<br>
+			<label for = "CM1-numero">Numero</label>
+				<input class =  "camponecesario" type = "text" name = "CM1-numero" id = "CM1-numero" min = "5" max = "5" pattern = "[0-9].{1,}" required>	
+			<br>
+			<label for = "CM1-fecha">Fecha</label>
+			<input class =  "camponecesario" type = "date" name = "CM1-fecha" id = "CM1-fecha" required>
+			<br>
+			<label for = "CM1-nombre-representante">Nombre del representante</label>
+				<input class =  "camponecesario" type = "text" name = "CM1-nombre-representante" id = "CM1-nombre-representante" min = "3" max = "50" pattern = "[a-zA-Z0-9].{1,}" required>
+		 </section>
+		<section class = CF1>
+					<br>
+			<label for = "CF1-nombre">Nombre</label>
+				<input class =  "camponecesario" type = "text" name = "CF1-nombre" id = "CF1-nombre" min = "3" max = "50" pattern = "[a-zA-Z0-9].{1,}" >
+			<br>
+			<label class =  "camponecesario" >Sexo / Genero ?</label>
+			<input type="radio" name="CF1-genero" id="CF1-m" value="m">
+				<label for="CF1-m">M</label>
+			<input type="radio" name="CF1-genero" id="CF1-h" value="h">
+				<label for="CF1-h">H</label>
+			<br>
+		 </section>
+	</section>	 
 	<br>
-	<label class =  "camponecesario" >Constituido mediante: </label>
-	<input type="radio" name="creacion" id="escritura" value="escritura">
-		<label for="escritura">Escritura</label>
-    <input type="radio" name="creacion" id="no" value="poliza">
-        <label for="poliza">Poliza      </label>
 	<br>
-	<label for = "numero">Numero</label>
-		<input class =  "camponecesario" type = "text" name = "numero" id = "numero" min = "5" max = "5" pattern = "[0-9]" required>
-	<br>
-	<label for = "fechamoral">Fecha</label>
-    <input class =  "camponecesario" type = "date" name = "fechamoral" id = "fechamoral" required>
-	<br>
-    <label for = "nombrerepresentante">Nombre del representante</label>
-		<input class =  "camponecesario" type = "text" name = "nombrerepresentante" id = "nombrerepresentante" min = "3" max = "50" pattern = "[a-zA-Z0-9]" required>
-
+	<section class = comprador2> 
+		<label for = "tipo-de-persona-comprador2">Tipo de persona</label>
+		<select id = "tipo-de-persona-comprador2" name = "tipo-de-persona-comprador2"> 
+			<option value = "fisica">Fisica</option>
+			<option value = "moral">Moral</option>
+		</select>
+		<br>
+		<!-- -->
+		<!-- -->
+		<section class = CM2>
+			<label for = "CM2-nombre">Nombre</label>
+				<input class =  "camponecesario combrecomprador" type = "text" name = "CM2-ombre" id = "CM2-nombre" min = "3" max = "50" pattern = "[a-zA-Z0-9].{1,}" required>
+			<br>
+			<label class =  "camponecesario" >Constituido mediante: </label>
+			<input type="radio" name="CM2-creacion" id="CM2-escritura" value="escritura">
+				<label for="CM2-escritura">Escritura</label>
+			<input type="radio" name="CM2-creacion" id="CM2-poliza" value="poliza">
+				<label for="CM2-poliza">Poliza      </label>
+			<br>
+			<label for = "CM2-numero">Numero</label>
+				<input class =  "camponecesario" type = "text" name = "CM2-numero" id = "CM2-numero" min = "5" max = "5" pattern = "[0-9].{1,}" required>	
+			<br>
+			<label for = "CM2-fecha">Fecha</label>
+			<input class =  "camponecesario" type = "date" name = "CM2-fecha" id = "CM2-fecha" required>
+			<br>
+			<label for = "CM2-nombre-representante">Nombre del representante</label>
+				<input class =  "camponecesario" type = "text" name = "CM2-nombre-representante" id = "CM2-nombre-representante" min = "3" max = "50" pattern = "[a-zA-Z0-9].{1,}" required>
+		</section>
+		<!-- -->
+		<section class = CF2>
+			
+			<label for = "CF2-nombre">Nombre</label>
+				<input class =  "camponecesario" type = "text" name = "CF2-nombre" id = "CF2-nombre" min = "3" max = "50" pattern = "[a-zA-Z0-9].{1,}" >
+			<br>
+			<label class =  "camponecesario" >Sexo / Genero ?</label>
+			<input type="radio" name="CF2-genero" id="CF2-m" value="m">
+				<label for="CF2-m">M</label>
+			<input type="radio" name="CF2-genero" id="CF2-h" value="h">
+				<label for="CF2-h">H</label>
+			<br>
+		 </section>
+	</section>	
 	<br>
     </section>
+	
+	</section>
+	<!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
+	<!-- --><!-- parte2--><!-- parte2--><!--parte2 --><!--parte2 --><!--parte2 --><!--parte2 --><!-- parte2--><!--parte2 --><!-- --><!-- --><!-- -->
+	<!-- --><!-- parte2--><!-- parte2--><!--parte2 --><!--parte2 --><!--parte2 --><!--parte2 --><!-- parte2--><!--parte2 --><!-- --><!-- --><!-- -->
+	<!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
+	<section class = parte2>
+	<label for = "Tipo-de-objeto">Compra/venta de: </label>
+	<select id = "Tipo-de-objeto" name = "Tipo-de-objeto" value ="Veiculo" > 
+			<option value = "Veiculo">Vehiculo</option>
+			<option value = "...">...</option>
+			<option value = "...">...</option>
+		</select><br><br>
+		
+	<section class = objetoVeiculo>
+		
+		<label for="Vehiculo-Tipo">Tipo: </label>
+		<input list="Vehiculos-Tipos" name="Vehiculo-Tipo" id="Vehiculo-Tipo">
 
-	<!-- -->
+		<datalist id="Vehiculos-Tipos">
+			<option value="Vagoneta">
+			<option value="Motocicleta">
+			<option value="...">
+			<option value="...">
+			<option value="...">
+		</datalist> 
+		<br><br>
+		
+		<!-- 
+		<label for = "VeiculoTipo">Tipo: </label>
+			<select id = "VeiculoTipo" name = "VeiculoTipo" value ="Veiculo" > 
+				<option value = "Vagoneta">Vagoneta</option>
+				<option value = "Motocicleta">Motocicleta</option>
+				<option value = "...">Otro</option>
+			</select>
+		<br>
+		-->
+		<label for="VehiculoMarca">Marca: </label>
+		<input list="Vehiculos-Marcas" name="VehiculoMarca" id="VehiculoMarca">
+
+		<datalist id="Vehiculos-Marcas">
+			<option value="Nissan">
+			<option value="Toyota">
+			<option value="Honda">
+			<option value="...">
+			<option value="...">
+		</datalist> 
+		<br><br>
+		
+		<!-- 
+		<label for = "VehiculoMarca">Marca: </label>
+			<select id = "VeiculoTipo" name = "VeiculoTipo" value ="Veiculo" > 
+				<option value = "Vagoneta">Nissan</option>
+				<option value = "Motocicleta">Toyota</option>
+				<option value = "...">Honda</option>
+				<option value = "Otro">Otro</option>
+			</select>
+		<br>
+		-->
+			
+			<label for = "VehiculoModelo">Modelo: </label>
+				<input class =  "camponecesario" type = "text" name = "Modelo" id = "nombre" min = "3" max = "50" pattern = "[a-zA-Z0-9].{1,}" required>
+			<br><br>
+			<label for = "Numero-ID-Veicular">Numero de identificacion vehicular: </label>
+				<input class =  "camponecesario" type = "text" name = "Numero-ID-Veicular" id = "Numero-ID-Veicular" min = "3" max = "500" pattern = "[A-Z0-9].{1,}" required>	
+			<br><br>
+			<label for = "Placas-de-circulacion">Placas de circulacion: </label>
+				<input class =  "camponecesario" type = "text" name = "Placas-de-circulacion" id = "Placas-de-circulacion" min = "3" max = "500" pattern = "[A-Z0-9].{1,}" required>	
+			<br><br>
+			<label for = "VehiculoAdquiridoDe">Adquirido de: </label>
+				<input class =  "camponecesario" type = "text" name = "VehiculoAdquiridoDe" id = "VehiculoAdquiridoDe" min = "3" max = "500" pattern = "[a-zA-Z0-9].{1,}" required>
+			<br><br>
+			<label for = "fecha">En la fecha: </label>
+				<input class =  "camponecesario" type = "date" name = "fecha" id = "fecha" required>
+			<br><br>
+			<label for = "VehiculoDescripcion">Descripcion adicional: </label>
+				<input class =  "camponecesario" type = "text" name = "VehiculoDescripcion" id = "VehiculoDescripcion" min = "3" max = "500" pattern = "[a-zA-Z0-9].{1,}" required>
+			<br>
+	<br><br>
+	</section>
+	</section>
+	<!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
+	<!-- --><!-- parte3--><!-- parte3--><!--parte3 --><!--parte3 --><!--parte3 --><!--parte3 --><!-- parte3--><!--parte3 --><!-- --><!-- --><!-- -->
+	<!-- --><!-- parte3--><!-- parte3--><!--parte3 --><!--parte3 --><!--parte3 --><!--parte3 --><!-- parte3--><!--parte3 --><!-- --><!-- --><!-- -->
+	<!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
+	<section class = parte3>
+	
+	
+	
+	</section>
+	<!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
+	<!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
+	<!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
+	<!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- -->
 	<form>
 		<br>
+		<input class = "prev" type = "button" value = "Prev">
 		<input class = "next" type = "button" value = "Next">
 	</form>
 	</section>
