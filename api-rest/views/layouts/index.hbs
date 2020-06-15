@@ -1,60 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <meta charset="utf-8">
+    <!--Relacionar con el css-->
+    <link href="/static/css/styleTables.css" rel="stylesheet">
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Document</title>
-<!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script> -->
-<!-- <link rel="stylesheet" type="text/css" href="../static/css/index.css" th:href="@{/css/index.css}"> -->
-<link href="/static/css/styleTables.css" rel="stylesheet">
-<link href="/static/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/2f6670760e.js" crossorigin="anonymous"></script>
 
-<script src="/static/js/jquery.min.js"></script>
-<script src="/static/js/bootstrap.min.js"></script>
-<script src="https://kit.fontawesome.com/2f6670760e.js" crossorigin="anonymous"></script>
-
-</head>
-<body>
-<nav class="navbar navbar-expand-sm"  >
-  <!-- Brand -->
-  <a class="navbar-brand" href="#"><img class="logo" src="/static/img/69126.jpg" alt="Logo" style=""></a>
-
-  <!-- Links -->
-  <ul class="navbar-nav mx-auto">
-    <li class="nav-item">
-      <a class="nav-link navtext" href="/" ><i class="fas fa-home"></i> home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link navtext" href="/api/product"><i class="fas fa-th-list"></i> Products</a>
-    </li>
-
-    <!-- Dropdown -->
-    <li class="nav-item dropdown ">
-      <a class="nav-link dropdown-toggle disabled" href="#" id="navbardrop" data-toggle="dropdown" >
-        <i class="fas fa-info-circle"></i>Pronto...
-      </a>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Link 1</a>
-        
+    <title>Generador de contratos</title>
+  </head>
+  <body>
+    <div class="Container">
+      <div class="Container cabecera1">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar1">
+            <a class="navbar-brand" href="#">GENERADOR DE CONTRATOS</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">ABOUT <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#">CONTACT</a>
+              </div>
+            </div>
+          </nav>
       </div>
-    </li>
-    <hr/>
-  </ul>
-  
-</nav>
+      <div class="Container Cabecera2">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active" style="height:35vh">
+                <img src="/static/img/diapositiva.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 style="color:black">QUIENES SOMOS</h5>
+                  <p style="color:black">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+              </div>
+              <div class="carousel-item " style="height:35vH">
+                <img src="/static/img/diapositiva2.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 style="color:black">VISION</h5>
+                    <p style="color:black">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+              </div>
+              <div class="carousel-item" style="height:35vH">
+                <img src="/static/img/diapositiva3.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 style="color:black">MISION</h5>
+                    <p style="color:black">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Siguiente</span>
+            </a>
+          </div>
+          </div>
+          </div>
+        <div class="Container Contenido">
+          <div class="row">
+            <div class="col-4">
+              <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action">Tipos de contratos</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-secondary" onclick="compr1();">Contrato de compraventa</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Contrato de arrendamiento</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Contrato no definido</a>
+              </div>
+            </div>
+            <div class="col-8 contrato">
+              <div class="row">
+                  <button type="button" class="btn btn-outline-dark col-6"> <i class="fas fa-search-plus"></i> AMPLIAR</button>
+                  <button type="button" class="btn btn-outline-dark col-6" onclick="generar();"><i class="fas fa-file-pdf"></i></a>GENERAR</button>
+                  <div class="p1" id="comp">
+                      <h5 class="p1">Vista Previa</h5>
+                      <embed class="p1" id="comp" src="./pdf/compve.pdf#toolbar=0" type="application/pdf" width="100%" height="100%" />
+                  </div>
+              </div>
+            </div>
+          </div>
+      </div>
 
-<div class="container " style="background-color: rgba(255, 239, 237, 0.7);position:relative" >
-{{{body}}}
-</div>
-<!-- footer -->
-<br><br><br><br>
-<footer class="footer">
-        <div class="">
-        <p>© José Guzmán | Politica de privacidad | Terminos del servcio</p>
-        </div>
-</footer>
-</body>
+      <script>
+          var condicion = 0;
+      		document.getElementById('comp').style.display="none";
+
+
+      		function compr1(){
+      				document.getElementById('comp').style.display="block";
+              condicion = 1;
+            }
+
+          function generar(){
+            var mensaje = "";
+            switch (condicion) {
+              case 1:
+                  mensaje="Se generara un formato de compraventa";
+                  alert(mensaje);
+                  document.location.hrf="./Contratosyo.html";
+                break;
+              case 2:
+                  mensaje="Aun no hay formato disponible";
+                  alert(mensaje);
+                break;
+              case 3:
+                    mensaje="Aun no hay formato disponible";
+                    alert(mensaje);
+                break;
+              case 4:
+                    mensaje="Aun no hay formato disponible";
+                    alert(mensaje);
+                break;
+              default:
+                  mensaje = "Aun no se ha elegido un tipo de contrato para generar";
+                  alert(mensaje);
+
+            }
+          }
+      </script>
+  </body>
 </html>
